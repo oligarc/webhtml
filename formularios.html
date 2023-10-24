@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoshrek.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+                <h1 class="text-center bg-azul-o text-white py-3 prueba">FORMULARIOS</h1>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home" class="py-3">
+                    <h2 class="text-center">Let's go formularios</h2>
+
+                    <div>
+                            <form action="kk.php" method="post" class="form-login">
+                                <h2>Formulario de login</h2>
+                                <fieldset>
+                                    <legend>Escribe tu usuario y contraseña de Muse.mu</legend>
+                                <p>Usuario <input type="text" name="nombre" id=""></p>
+                                <p>Contraseña <input type="password" name="contraseña" id=""></p>
+                                <input type="submit" value="login">
+                            </fieldset>
+                            </form>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <form action="kk.php" method="post" class="form-registro">
+                            <h2>Formulario Muser</h2>
+                            <fieldset>
+                                <legend>Formulario para ver si eres Muser</legend>
+                                <p>¿Quién es tu dios? <input type="text" name="nombre" id=""
+                                        placeholder="Escribe matt bellamy"></p>
+                                <p>Número de tarjeta de crédito<input type="text" name="contraseña" id=""
+                                        placeholder="Matt bellamy lo necesita"></p>
+                                <p>¿Cuándo nació tu dios? <select name="" id="">
+                                        <option value="día">1</option>
+                                        <option value="día">2</option>
+                                        <option value="día">3</option>
+                                        <option value="día">4</option>
+                                        <option value="día">5</option>
+                                        <option value="día">6</option>
+                                        <option value="día">7</option>
+                                        <option value="día">8</option>
+                                        <option value="día">9</option>
+                                        <option value="día">10</option>
+                                        <option value="día">11</option>
+                                        <option value="día">12</option>
+                                        <option value="día">13</option>
+                                        <option value="día">14</option>
+                                        <option value="día">15</option>
+                                        <option value="día">16</option>
+                                        <option value="día">17</option>
+                                        <option value="día">18</option>
+                                        <option value="día">19</option>
+                                        <option value="día">20</option>
+                                        <option value="día">21</option>
+                                        <option value="día">22</option>
+                                        <option value="día">23</option>
+                                        <option value="día">24</option>
+                                        <option value="día">25</option>
+                                        <option value="día">26</option>
+                                        <option value="día">27</option>
+                                        <option value="día">28</option>
+                                        <option value="día">29</option>
+                                        <option value="día">30</option>
+                                        <option value="día">31</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="mes">Enero</option>
+                                        <option value="mes">Febrero</option>
+                                        <option value="mes">Marzo</option>
+                                        <option value="mes">Abril</option>
+                                        <option value="mes">Mayo</option>
+                                        <option value="mes">Junio</option>
+                                        <option value="mes">Julio</option>
+                                        <option value="mes">Agosto</option>
+                                        <option value="mes">Septiembre</option>
+                                        <option value="mes">Octubre</option>
+                                        <option value="mes">Noviembre</option>
+                                        <option value="mes">Diciembre</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="anio">1980</option>
+                                        <option value="anio">1981</option>
+                                        <option value="anio">1982</option>
+                                        <option value="anio">1983</option>
+                                        <option value="anio">1984</option>
+                                        <option value="anio">1985</option>
+                                        <option value="anio">1986</option>
+                                        <option value="anio">1987</option>
+                                        <option value="anio">1988</option>
+
+                                    </select>
+                                </p>
+
+                                <legend>¿Algo que objetar?</legend>
+                                <textarea name="comentario" id="" cols="50" rows="5"></textarea>
+
+                                <legend>¿Tu album/es favorito/s?</legend> <br>
+                                <input type="checkbox" name="albumFavUser" id=""> Showbiz <br>
+                                <input type="checkbox" name="albumFavUser" id=""> Origin of Symmetry <br>
+                                <input type="checkbox" name="albumFavUser" id=""> Absolution <br>
+                                <input type="checkbox" name="albumFavUser" id=""> Black Holes and Revelations <br>
+                                <input type="checkbox" name="albumFavUser" id=""> The Resistance <br>
+                                <input type="checkbox" name="albumFavUser" id=""> The 2nd Law <br>
+                                <input type="checkbox" name="albumFavUser" id=""> Drones <br>
+                                <input type="checkbox" name="albumFavUser" id=""> Simulation Theory <br>
+                                <input type="checkbox" name="albumFavUser" id=""> Will of the people <br> <br>
+
+                                <legend>¿Album favorito de tu Dios?</legend> <br>
+                                <input type="radio" name="albumFavUser" id=""> Showbiz <br>
+                                <input type="radio" name="albumFavUser" id=""> Origin of Symmetry <br>
+                                <input type="radio" name="albumFavUser" id=""> Absolution <br>
+                                <input type="radio" name="albumFavUser" id=""> Black Holes and Revelations <br>
+                                <input type="radio" name="albumFavUser" id=""> The Resistance <br>
+                                <input type="radio" name="albumFavUser" id=""> The 2nd Law <br>
+                                <input type="radio" name="albumFavUser" id=""> Drones <br>
+                                <input type="radio" name="albumFavUser" id=""> Simulation Theory <br>
+                                <input type="radio" name="albumFavUser" id=""> Will of the people <br> <br>
+
+                                <legend>¿De dónde es?</legend> <br>
+                                <select name="Estado" id="" multiple-size="5">
+                                    <option value="1">Colorado</option>
+                                    <option value="2">Texas</option>
+                                    <option value="3">Wisconsin</option>
+                                    <option value="4">Chicago</option>
+                                    <option value="5">LA</option>
+                                </select>
+
+                                <p>Sube una foto donde salga bien <br><input type="file" name="fotoMatt" id=""></p> <br>
+                                <input type="submit" value="Enviar formulario">
+                            </fieldset>
+                        </form>
+                        <div class="cd"></div>
+
+                    </div>
+                    <div>
+                            <form action="kk.php" method="post" class="form-html5">
+                                <h2>Formulario Muser HTML</h2>
+                                <fieldset>
+                                    <legend>INPUTS HTML5</legend>
+                                <p><label for="">Elige su color favorito:</label> <input type="color" name="color"
+                                        id="">
+                                </p>
+                                <p><label for="">Pon su fecha de nacimiento:</label> <input type="date" name="date"
+                                        id="">
+                                </p>
+                                <p><label for="">Datetime:</label> <input type="datetime" name="datetime" id=""></p>
+                                <p><label for="">Pon su fecha y hora de nacimiento:</label> <input type="datetime-local"
+                                        name="datetime-local" id=""></p>
+                                <p><label for="">Pon tu mail:</label> <input type="email" name="email" id=""></p>
+                                <p><label for="">¿En qué mes y año naciste?:</label> <input type="month" name="month"
+                                        id="">
+                                </p>
+                                <p><label for="">¿Su número favorito?</label> <input type="number" name="number" id=""
+                                        step="2" min="2" max="50"></p>
+                                <p><label for="">¿Cuánto le amas?</label> <input type="range" name="range" id=""></p>
+                                <p><label for="">Dime tu número de teléfono:</label> <input type="tel" name="tel" id="">
+                                </p>
+                                <p><label for="">¿Qué hora es ahora mismo?:</label> <input type="time" name="time"
+                                        id="">
+                                </p>
+                                <p><label for="">¿Qué semana es?:</label> <input type="week" name="week" id=""></p>
+                                <p><label for="">¿Tu web favorita?:</label> <input type="url" name="url" id="" placeholder="(es la de muse)"></p>
+                                <input type="submit" value="Enviar">
+                                </fieldset>
+                            </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3 pafooter">&copy; Made in Bargas</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

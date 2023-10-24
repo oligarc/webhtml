@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoshrek.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+                <h1 class="text-center bg-azul-o text-white py-3 prueba">TABLAS</h1>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home" class="py-3">
+                    <h2 class="text-center">HORARIO DEL S1DAW</h2>
+                    <table border="1" class="horario">
+                        <tr>
+                            <th colspan="6" class="grupo">S1DAW</th>
+                        </tr>
+                        <tr>
+                            <th>/ &#0126; \</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        <tr>
+                            <th>08:15 <br>09:10</br></th>
+                            <td class="fol">FOL <br>Prud. Ga, Es<br>1 B-301</td>
+                            <td class="ende">ENDE <br>Polo Or, Ed <br>1 B-301</td>
+                            <td rowspan="2" class="lsmg">LMSG <br>Puli. Mo, FrJo <br>1 B-301</td>
+                            <td rowspan="2" class="prog">PROG <br>Gall. Cr, Di<br>1 B-301</td>
+                            <td rowspan="2" class="sisi">SISI <br>Mart Ru, To<br>1 B-301 <br>SISI <br>Atie. Ib, JoEn <br>1 B-304 </td>
+                        </tr>
+                        <tr>
+                            <th>09:10 <br>10:05</th>
+                            <td rowspan="2" class="prog">PROG <br>Gall. Cr, Di<br>1 B-301</td>
+                            <td rowspan="2" class="lsmg">LMSG <br>Puli. Mo, FrJo <br>1 B-301</td>
+                        </tr>
+                        <tr>
+                            <th>10:05 <br>11:00</th>
+                            <td class="ing">ING<br>Guti Sa, JoÁn <br>1 B-301</td>
+                            <td class="bdd">BDD <br>León Dí, JuEf <br>1 B-301</td>
+                            <td class="fol">FOL <br>Prud. Ga, Es<br>1 B-301</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th colspan="5">recreo</th>
+                        </tr>
+                        <tr>
+                            <th>11:30 <br>12:25</th>
+                            <td rowspan="2" class="bdd">BDD <br>León Dí, JuEf <br>1 B-301</td>
+                            <td class="fol">FOL <br>Prud. Ga, Es<br>1 B-301</td>
+                            <td class="ende">ENDE<br>Polo Or, Ed <br>1 B-301</td>
+                            <td class="bdd">BDD <br>León Dí, JuEf <br>1 B-301</td>
+                            <td rowspan="2" class="prog">PROG <br>Gall. Cr, Di<br>1 B-301</td>
+                        </tr>
+                        <tr>
+                            <th>12:25 <br>13:20</th>
+                            <td rowspan="2" class="bdd">BDD <br>León Dí, JuEf <br>1 B-301</td>
+                            <td rowspan="2" class="sisi">SISI <br>Mart Ru, To<br>1 B-301 <br>SISI <br>Atie. Ib, JoEn <br>1 B-304</td>
+                            <td rowspan="2" class="sisi">SISI <br>Mart Ru, To<br>1 B-301 <br>SISI <br>Atie. Ib, JoEn <br>1 B-304</td>
+                        </tr>
+                        <tr>
+                            <th>13:20 <br>14:15</th>
+                            <td class="ende">ENDE<br>Polo Or, Ed <br>1 B-301</td>
+                            <td class="ing">ING<br>Guti Sa, JoÁn <br>1 B-301</td>
+                        </tr>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3 pafooter">&copy;Made in Bargas</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

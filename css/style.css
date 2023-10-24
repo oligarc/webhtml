@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(18, 0, 110);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(0 157 222);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-orange {
+    background-color: orange;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: red;
+    font-size: 30px;
+    background-color: cyan;
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+
+}
+
+.text-orange{
+    color: orangered;
+}
+.text-negrita{
+    font-weight: bold;
+}
+.text-grande {
+    font-size: 30px;
+}
+#listaoc ol{
+    list-style-type:circle;
+}
+#listaoc ol ol{
+    list-style-type: disc;
+    padding: 4px 25px;
+}
+
+#listaicon ul{
+    list-style-image:url(../img/iconmusica.png) ;
+    
+}
+
+#listaicon ul ol{
+    list-style-image: none;
+    list-style-type: disc;
+}
+
+#listadefinicion dl dt{
+    font-weight: bold;
+    color: rgb(44, 80, 39);
+    background-color: white;
+    display: inline;
+}
+
+table.horario{
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table.horario th{
+    background-color: rgb(240, 240, 240);
+    color:rgb(54, 126, 127);
+    font-weight: bold;
+}
+
+.fol{
+    background-color: rgb(240, 240, 204);
+}
+.prog{
+    background-color: rgb(177, 122, 121);
+}
+.sisi{
+    background-color: rgb(180, 179, 110);
+}
+.bdd{
+    background-color: rgb(246, 202, 201);
+}
+.ing{
+    background-color: rgb(242, 166, 111);
+}
+.ende{
+    background-color: rgb(96, 197, 198);
+}
+.lsmg{
+    background-color: rgb(248, 211, 86);
+}
+
+table.horario th.grupo{
+    font-size: 26px;
+    font-style: italic;
+}
+
+form.form-login{
+    width: 20%;
+    float: left;
+    padding: 0 40px;
+}
+
+form.form-registro {
+    width: 40%;
+    float: right;
+    padding: 0 40px;
+}
+
+.cd{
+    clear: both;
+}
+
+form.form-html5{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form-html5 fieldset{
+    background-color: azure;
+}
+
+.form-html5 legend{
+    background-color: whitesmoke;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.form-html5 label{
+    background-color: rgb(134, 220, 97);
+    color: whitesmoke;
+}
+
+.prueba{
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+.padiv{
+    border-radius: 50px;
+}
+
+.pafooter{
+    background-color: aquamarine;
+    border-radius: 20px;
+    color:beige;
+}
+
+
+

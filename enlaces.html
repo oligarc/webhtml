@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoshrek.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3 prueba">ENLACES</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home" class="py-3">
+                    <h1 class="text-center">Sus voy a abrear a enlaces de Muse</h1>
+                    <h2>Tipos de canciones de Muse</h2>
+                    <h3>La canción que te motiva</h3>
+                    <p><a href="https://www.youtube.com/watch?v=G_sBOsh-vyI" class="text-orange text-negrita">DALE</a></p>
+                    <h3>La canción que te hace ser heavy</h3>
+                    <p><a href="https://www.youtube.com/watch?v=GgyQufB1Yic" class="text-negrita" target="_blank">PULSA</a></p>
+                    <h3>La canción que te hace llorar</h3>
+                    <p><a href="https://www.youtube.com/watch?v=NN1OtIJu_Bk" target="_blank"><img src="img/sadmuse.jpg" alt="Muse sad" width="200"></a></p>
+                    <h2>No todo va a ser Muse, también hay otras cosas</h2>
+                    <p>Como por ejemplo que pinchando <a href="index.html" class="text-negrita">aquí</a> te vas al home de esta web</p>
+                    <p>O si quieres enviarme un mail contándome cositas también puedes dándole <a href="mailto:oliver25399@gmail.com" class="text-negrita">aquí</a></p>
+                    <p>Si pinchas aquí... Jaja ahí no era, es <a href="javascript:alert('Muse es mi vida')">aquí</a></p>
+                    <h2>Venga terminamos con la mejor de Muse</h2>
+                    <p class="text-center"><a href="https://www.youtube.com/watch?v=eMqsWc8muj8"> <img src="img/musebliss.jpg" alt="blissmuse" width="500"></a></p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3 pafooter">&copy;Made in Bargas</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
